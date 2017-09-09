@@ -1,0 +1,24 @@
+{
+  "name": "testing-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovaneyck/TestingExercises.git"
+  },
+  "author": "Jo Van Eyck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jovaneyck/TestingExercises/issues"
+  },
+  "homepage": "https://github.com/jovaneyck/TestingExercises#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
+  }
+}
