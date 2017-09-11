@@ -1,0 +1,52 @@
+{
+  "_from": "jasmine-params",
+  "_id": "jasmine-params@0.3.2",
+  "_inBundle": false,
+  "_integrity": "sha1-nH4tdUO5FUnLMk0wm6JK1eL5Zyw=",
+  "_location": "/jasmine-params",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jasmine-params",
+    "name": "jasmine-params",
+    "escapedName": "jasmine-params",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/jasmine-params/-/jasmine-params-0.3.2.tgz",
+  "_shasum": "9c7e2d7543b91549cb324d309ba24ad5e2f9672c",
+  "_spec": "jasmine-params",
+  "_where": "C:\\Users\\ext_jvy\\Desktop\\testing\\TestingExercises\\javascript",
+  "authors": [
+    "Antony Jones",
+    "Immanuel Hayden"
+  ],
+  "bugs": {
+    "url": "https://github.com/FrankyBoy/jasmine-params/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Parmeterized Jasmine tests",
+  "homepage": "https://github.com/FrankyBoy/jasmine-params#readme",
+  "keywords": [
+    "jasmine",
+    "paramters"
+  ],
+  "license": "BSD",
+  "main": "index.js",
+  "name": "jasmine-params",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankyBoy/jasmine-params.git"
+  },
+  "scripts": {
+    "test": "jasmine-node spec/ --verbose"
+  },
+  "version": "0.3.2"
+}

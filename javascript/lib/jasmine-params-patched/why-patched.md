@@ -1,0 +1,1 @@
+This package uses Jasmine's iit & idescribe functions internally, which don't exist anymore.
