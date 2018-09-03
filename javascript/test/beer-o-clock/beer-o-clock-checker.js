@@ -1,11 +1,11 @@
 const BEER_O_CLOCK = 16;
 
-function itsBeerOClock () {
-    return now().getHours() >= BEER_O_CLOCK;
-}
+let factory = (timeFactory) => 
+    () => timeFactory().getHours() >= BEER_O_CLOCK;
 
 function now(){
     return new Date();
 }
 
-module.exports.itsBeerOClock = itsBeerOClock;
+module.exports.factory = factory;
+module.exports.itsBeerOClock = factory(now);

@@ -3,13 +3,28 @@ var sinon = require("sinon");
 chai.use(require("sinon-chai"));
 chai.should();
 
-const logSource = require('./log-source');
-const logger = require('./logger');
-
-const analyzer = require('./log-analyzer');
+const factory = require('./log-analyzer').factory;
+let buildAnalyzer = (s,l) => factory(s,l)
 
 describe("Log analyzer", () => {
     it("Logs errors to the error stream", () => {
-        throw new Error("write log analyzer specs")
+        let source = sinon.stub().returns(["Error: error message"])
+        let logger = { logError : sinon.spy()}
+        let analyzer = buildAnalyzer(source, logger)
+
+        analyzer()
+
+        logger.logError.should.be.calledWith("Error: error message")
+    });
+
+    
+    it("Logs info to the info stream", () => {
+        let source = sinon.stub().returns(["Info: info message"])
+        let logger = { logInfo : sinon.spy()}
+        let analyzer = buildAnalyzer(source, logger)
+
+        analyzer()
+
+        logger.logInfo.should.be.calledWith("Info: info message")
     });
 });
